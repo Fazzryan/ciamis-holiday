@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- My Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="leaflet/leaflet.css" />
+    <!-- My JS -->
+    <script src="js/jquery.js"></script>
+    <script src="leaflet/leaflet.js"></script>
+    <title>Cobek Beti - Ciamis Holiday</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar-dindaf">
+        <div class="container-navbar-dindaf">
+            <a href="index.html" class="navbar-brand-dindaf"> CIAMIS HOLIDAY</a>
+            <ul class="navbar-ul-dindaf">
+                <li class="navbar-li-dindaf">
+                    <a href="index.html" class="navbar-link-dindaf">HOME</a>
+                </li>
+                <li class="navbar-li-dindaf">
+                    <a href="kategori.html" class="navbar-link-dindaf">CATEGORY</a>
+                </li>
+                <li class="navbar-li-dindaf">
+                    <a href="blog.html" class="navbar-link-dindaf">BLOG</a>
+                </li>
+                <li class="navbar-li-dindaf">
+                    <a href="about.html" class="navbar-link-dindaf">ABOUT</a>
+                </li>
+                <li class="navbar-li-dindaf">
+                    <a href="kontak.html" class="navbar-link-dindaf">CONTAC</a>
+                </li>
+                <li class="navbar-li-dindaf">
+                    <a href="login.html" class="navbar-link-dindaf login-dindaf">LOGIN</a>
+                </li>
+            </ul>
+            <div id="navMenuDindaf">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <section style="margin-bottom: 25px;">
+        <div id="mapWisataDindaf">
+        </div>
+    </section>
+
+    <section>
+        <div class="container-dindaf">
+            <div class="konten-kiri-dindaf">
+                <img src="img/kuliner3.jpeg" alt="">
+            </div>
+            <div class="konten-kanan-dindaf">
+                <h2>Cobek Beti</h2>
+                <div style="margin: 10px 0;"><i class="fa-solid fa-location-dot"></i> Jl. Raya Ciamis, Cijeungjing, Kec.
+                    Ciamis, Kabupaten Ciamis, Jawa Barat
+                </div>
+                <h4>Deskripsi</h4>
+                <span>Rumah Makan Cobek Beti adalah Rumah Makan di Ciamis yang memiliki tempat nyaman untuk makan
+                    bersama keluarga tercinta. Nuansa nan asri di iringi suara gemercik air dapat menambah suasana
+                    nyaman dan selera makan bertambah.
+                </span>
+                <span>Dengan fasilitas tempat duduk dan lesehan serta mempunyai tempat parkir yang cukup luas, mushola
+                    dan toilet yang nyaman RM Cobek Beti menyediakan daftar menu masakan restoran sunda yang lengkap
+                    diantaranya nasi liwet, ikan bakar, ayam bakar, dan sambalnya yang enak. Untuk menu rekomendasi
+                    adalah manuk londo.
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ulasan -->
+    <section style="background-color: #fff; margin:20px 0 0 0;">
+        <div class="container-dindaf">
+            <div class="konten-kiri-dindaf">
+                <h3 style="margin:20px 0 4px 0; padding: 20px 0;">ULASAN PENGUNJUNG</h3>
+                <div id="ulasanDindaf" style="text-align: left;">
+
+                </div>
+            </div>
+            <div class="konten-kanan-dindaf">
+                <div class="konten-login-dindaf shadow-dindaf">
+                    <div style="padding:20px;">
+                        <h3 style="margin:8px 0; text-align: center;">TAMBAH UlASAN ANDA</h3>
+                        <div style="margin: 8px 0;">
+                            <label for="nama">Nama</label>
+                            <input type="text" id="namaUlasanDindaf">
+                        </div>
+                        <div style="margin: 8px 0;">
+                            <label for="email">Email</label>
+                            <input type="email" id="emailUlasanDindaf">
+                        </div>
+                        <div style="margin: 8px 0;">
+                            <label for="rating">Rating</label>
+                            <select id="ratingUlasanDindaf">
+                                <option value="Tidak Puas">Tidak Puas</option>
+                                <option value="Cukup Puas">Cukup Puas</option>
+                                <option value="Puas" selected>Puas</option>
+                                <option value="Sangat Puas">Sangat Puas</option>
+                            </select>
+                        </div>
+                        <div style="margin: 8px 0;">
+                            <label for="pesan">Pesan</label>
+                            <textarea name="" id="pesanUlasanDindaf" cols="30" rows="10"></textarea>
+                        </div>
+                        <button type="submit" name="kirim" id="kirimUlasanDindaf" class="btn-v1-dindaf"
+                            style="font-weight: 600;font-size:16px;">Kirim</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-dindaf">
+            <div class="footer-kanan-dindaf">
+                <img src="img/hero.png" alt="">
+                <p><b>CIAMIS HOLIDAY</b> adalah website yang menyediakan informasi tentang tempat Wisata di Kabupaten
+                    Ciamis. Website ini saya buat untuk memenuhi Uas mata kuliah Web 1 Semester 4.</p>
+            </div>
+            <div class="footer-kiri-dindaf">
+                <h2>Sosial Media</h2>
+                <p>
+                    <a href="https://www.instagram.com/fazzryan.c"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://web.facebook.com/fazryan.c09/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=6287731137537&text=Halo%20Dinda!!!%20"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.youtube.com/channel/UCS267HKSoEyTqFMgxpCB3Tw/featured"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </p>
+            </div>
+        </div>
+        <div class="container-dindaf">
+            <div class="foot-dindaf">
+                <p>&copy; Copyright 2022 | Dibuat oleh <a href="http://fazryan.epizy.com">Dinda Fazryan</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Akhir Footer -->
+    <script src="js/script.js"></script>
+    <script>
+        // Peta Lokasi Wisata
+        // Pengaturan Icon untuk marker
+        var icon = L.icon({ iconUrl: 'leaflet/images/marker-icon.png' });
+
+        //Menampilkan pusat peta, titik awal peta
+        var mymap = L.map('mapWisataDindaf', { zoomControl: true }).setView([-7.3337419680872955, 108.41762349713291], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(mymap);
+
+        // Menampilkan titik kordinat rumah makan ke peta
+        L.marker([-7.3337419680872955, 108.41762349713291], { icon: icon }).bindPopup('Cobek Beti').addTo(mymap);
+
+        var satellite = L.tileLayer(mbUrl, {
+            id: 'mapbox/satellite-v9',
+            tileSize: 512, zoomOffset: -1, attribution: mbAttr
+        });
+    </script>
+</body>
+
+</html>

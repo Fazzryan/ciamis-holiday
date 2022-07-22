@@ -1,0 +1,171 @@
+@media (max-width: 768px) {
+
+    /* Navbar */
+    #navMenuDindaf {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        align-self: flex-end;
+    }
+
+    .navbar-brand-dindaf {
+        text-decoration: none;
+        color: black;
+        font-weight: 800;
+        font-size: 20px;
+    }
+
+    .navbar-ul-dindaf {
+        list-style: none;
+        display: none;
+        margin-top: 10px;
+    }
+
+    .navbar-li-dindaf {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+
+    .container-navbar-dindaf {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* login */
+    .login-form-dindaf {
+        width: 80%;
+    }
+
+    /* Hero */
+    .container-dindaf {
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .konten-kanan-dindaf h2 {
+        font-size: 28px;
+    }
+
+    /* Section Wisata */
+    .card-dindaf {
+        width: 20rem;
+        height: auto;
+        border-radius: 20px;
+        margin: 10px 0;
+    }
+
+    .card-dindaf img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    /* about */
+    .konten-kiri-about-dindaf {
+        width: 49%;
+        height: auto;
+    }
+
+    .konten-kiri-about-dindaf img {
+        width: 95%;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0px -1px 21px -13px rgba(66, 68, 90, 1);
+    }
+
+    .konten-kanan-about-dindaf {
+        width: 49%;
+        height: auto;
+    }
+
+    /* category */
+    .card-category-dindaf {
+        width: 20rem;
+        position: relative;
+        margin: 10px 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    .card-category-dindaf:hover {
+        transform: scale(1.01);
+    }
+
+    .card-category-dindaf img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .card-category-dindaf h3 {
+        color: white;
+        padding: 18px;
+        font-size: 16px;
+        text-align: center;
+        background: black;
+        opacity: 0.8;
+        border-radius: 50px;
+    }
+
+    /* Card2 */
+    .card-blog-dindaf {
+        width: 19rem;
+        height: auto;
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px -1px 18px -7px rgba(66, 68, 90, 1);
+        transition: 0.3s ease-in-out;
+    }
+
+    .card-blog-dindaf img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .card-blog-body-dindaf {
+        padding: 10px 15px 25px 15px;
+    }
+
+    .card-blog-body-dindaf h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .konten-blog-dindaf {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .konten-blog-dindaf img {
+        width: 100%;
+    }
+
+    .konten-blog-dindaf h2 {
+        text-align: left;
+        margin: 20px 0;
+        font-size: 24px;
+    }
+
+    .konten-blog-dindaf p {
+        margin: 10px 0;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #2B3445;
+        margin-top: 20px;
+        padding: 30px 0;
+        color: #fff;
+    }
+
+    footer .footer-kanan-dindaf {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
